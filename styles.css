@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6F4EA;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0e1131;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #EF5B0C;
+}
+
+/* Header */
+header {
+    background-color: #0e1131;
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Push down below navbar */
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    color: #EF5B0C;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #3CCF4E;
+    margin: 5px 0;
+}
+
+.meet-strip {
+    background-color: #EF5B0C;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.meet-strip h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Founders Section */
+.founders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.profile h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: #0e1131;
+}
+
+.profile p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #EF5B0C;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 5px;
+    color: #3CCF4E;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #EF5B0C;
+}
+
+/* Team Block (Admin + Domains) */
+.team-block {
+    background-color: white;
+    margin: 30px auto;
+    padding: 40px;
+    width: 95%;
+    max-width: 1100px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-block h2 {
+    font-size: 2em;
+    color: #003865;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.member {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member h4 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #0e1131;
+}
+
+.member p {
+    margin: 0;
+    font-weight: bold;
+    color: #EF5B0C;
+}
+
+/* Domain Section */
+.domain-section h3 {
+    font-size: 1.5em;
+    color: #3CCF4E;
+    margin: 20px 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .profile, .member {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
