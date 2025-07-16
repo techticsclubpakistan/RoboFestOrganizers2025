@@ -43,14 +43,17 @@ body {
 
 /* Header */
 header {
-    background-color: #0e1131;
+    background-color: #0e1131;  /* Main Color for the header */
     color: white;
-    height: 30vh;
+    height: 30vh; /* Header now takes 30% of the viewport height */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;  /* Arrange elements vertically */
     align-items: center;
-    padding-top: 60px; /* Push down below navbar */
+    justify-content: center; /* Center the content vertically */
+    position: relative; /* Ensure positioning context for logos */
+    width: 100%;  /* Full width of the page */
+    margin: 0; /* Remove margin to remove distance from the top */
+    padding: 0; /* Increased padding for more height */
 }
 
 .text-section h1 {
